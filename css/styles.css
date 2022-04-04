@@ -24,6 +24,12 @@ body {
   color: var(--text-color-main);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* utility classes */
 
 .heading {
@@ -67,7 +73,7 @@ body {
 /* header */
 
 .page-header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -95,8 +101,12 @@ body {
 }
 
 .nav-site {
-  display: flex;
   margin-left: 93px;
+}
+
+.nav-site-list {
+  display: flex;
+  
 }
 
 .nav-site-item:not(:last-child){
@@ -164,6 +174,8 @@ body {
 /* section hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--bg-color-footer);
   text-align: center;
 }
@@ -204,12 +216,11 @@ body {
 /* section features */
 
 .features-list{
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
 }
 
-.feature {
-  flex-basis: calc((100% - 30px*3)/4);
+.feature:not(:last-child) {  
+  margin-right: 30px;
 }
 
 .feature-title {
@@ -221,16 +232,14 @@ body {
 
 /* section activities */
 
+.sction-activities {
+  padding-top: 0;
+}
+
 .activities-list {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-}
-
-.activity-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /* section out team */
@@ -250,12 +259,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .team-card-text{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -270,12 +273,10 @@ body {
 
 .page-footer {
   background-color: var(--bg-color-footer);
-}
-
-.contacts {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 
 .address-box {
   margin-top: 20px;
@@ -351,12 +352,6 @@ body {
   flex-basis: calc(100%/3 - var(--gap-card-projects));
   margin-top: var(--gap-card-projects);
   margin-left: var(--gap-card-projects);
-}
-
-.project-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .project-text{

@@ -21,8 +21,8 @@
   <header class="page-header">
     <div class="container nav-main">
       <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
-      <nav>
-        <ul class="nav-site list">
+      <nav class="nav-site">
+        <ul class="nav-site-list list">
           <li class="nav-site-item"><a class="nav-site-link current" href="./index.html">Студия</a></li>
           <li class="nav-site-item"><a class="nav-site-link" href="./portfolio.html">Портфолио</a></li>
           <li class="nav-site-item"><a class="nav-site-link" href="#">Контакты</a></li>
@@ -32,13 +32,12 @@
         <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-    </div>
-   
+    </div>   
   </header>
   <!-- main -->
   <main>
     <!-- section hero -->
-    <section class="section hero">
+    <section class="hero">
       <div class="container">
         <h1 class="section-heading heading">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-btn" type="button">Заказать услугу</button>
@@ -76,16 +75,25 @@
       </div>      
     </section>
     <!-- section activities -->
-    <section class="section">
+    <section class="section sction-activities">
       <div class="container">
           <h2 class="section-heading heading">Чем мы занимаемся</h2>
           <ul class="activities-list list">
-            <li class="activity"><a href="#"><img class="activity-img" src="./images/activity1.jpg" alt="разработка десктопных приложений"
-                  width="370"></a></li>
-            <li class="activity"><a href="#"><img class="activity-img" src="./images/activity2.jpg" alt="разработка мобильных приложений"
-                  width="370"></a></li>
-            <li class="activity"><a href="#"><img class="activity-img" src="./images/activity3.jpg" alt="предоставление дизайнерских решений"
-                  width="370"></a></li>
+            <li class="activity">
+              <div class="thumb">
+                <img src="./images/activity1.jpg" alt="разработка десктопных приложений" width="370">
+              </div>
+            </li>
+            <li class="activity">
+              <div class="thumb">
+                <img src="./images/activity2.jpg" alt="разработка мобильных приложений" width="370">
+              </div>
+            </li>
+            <li class="activity">
+              <div class="thumb">
+                <img src="./images/activity3.jpg" alt="предоставление дизайнерских решений" width="370">
+              </div>
+            </li>
           </ul>
       </div>   
     </section>
@@ -138,12 +146,21 @@
         <address class="address-box">
           <ul class="address-list list">
             <li class="address-item">
-              <a class="address-link address-link--white" href="https://goo.gl/maps/oR3F1YAG6LvCoMsa9" target="_blank"
-                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26
+              <a class="address-link address-link--white" 
+                href="https://goo.gl/maps/oR3F1YAG6LvCoMsa9" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
-            <li class="address-item"><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="address-item"><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+
+            <li class="address-item">
+              <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+
+            <li class="address-item">
+              <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>      
